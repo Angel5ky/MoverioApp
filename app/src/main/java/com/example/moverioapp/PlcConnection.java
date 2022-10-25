@@ -19,6 +19,7 @@ public class PlcConnection implements Runnable {
     private int rack = 0;
     private int slot = 0;
     private boolean running = false;
+    public boolean leido = false;
 
     //Array datos extraidos del PLC
     private int [] Datos = new int [20];
@@ -31,6 +32,7 @@ public class PlcConnection implements Runnable {
         this.rack = rack;
         this.slot = slot;
         running = true;
+
     }
 
     public void terminate() {
@@ -46,12 +48,14 @@ public class PlcConnection implements Runnable {
 
         if (res==0){
             byte[] data = new byte[65536];
+            running = true;
             while (running) {
                 try{
                     res = Client.ReadArea(selectedArea, dBNumber, offset, length, data);
                     for(int i=0,y=0;i<=320;i=i+16,y++){
                         Datos[y]=S7.GetWordAt(data,i);
                     }
+                    leido = true;
                 }
                 catch (Exception e) {
                     System.out.println("Fallo en la lectura del buffer");
@@ -62,6 +66,11 @@ public class PlcConnection implements Runnable {
         }
         else{
             System.out.println("Error de conexión al PLC");
+            for(int y=0;y<=19;y++){
+                Datos[y]=255;
+            }
+            leido = true;
+
         }
     }
     public int[] getDatos(){

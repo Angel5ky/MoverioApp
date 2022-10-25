@@ -17,6 +17,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <EditText
+            android:id="@+id/textIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="192.168.1.253"
+            android:textAlignment="center"
+            android:textColor="#F44336" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="botonIniciar"
+            android:text="Inicio" />
+
         <TextView
             android:id="@+id/Dato1"
             android:layout_width="183dp"
@@ -31,18 +48,6 @@
             android:background="#00573131"
             android:text="Dato2"
             android:textColor="#FF0000" />
-
-        <TextView
-            android:id="@+id/Dato3"
-            android:layout_width="181dp"
-            android:layout_height="61dp"
-            android:text="Dato3" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="181dp"
-            android:layout_height="79dp"
-            android:text="Dato4" />
 
     </LinearLayout>
 
