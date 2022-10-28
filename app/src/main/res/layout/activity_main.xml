@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="192.168.1.253"
+            android:text="192.168.0.253"
             android:textAlignment="center"
             android:textColor="#F44336" />
 
@@ -36,10 +36,11 @@
 
         <TextView
             android:id="@+id/Dato1"
-            android:layout_width="183dp"
-            android:layout_height="63dp"
-            android:text="Dato1"
-            android:textColor="#FF0000" />
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:text=" "
+            android:textColor="#FF0000"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/Dato2"

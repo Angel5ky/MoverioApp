@@ -52,10 +52,11 @@ public class PlcConnection implements Runnable {
             while (running) {
                 try{
                     res = Client.ReadArea(selectedArea, dBNumber, offset, length, data);
-                    for(int i=0,y=0;i<=320;i=i+16,y++){
+                    for(int i=0,y=0;i<=length-2;i=i+2,y++){
                         Datos[y]=S7.GetWordAt(data,i);
                     }
                     leido = true;
+
                 }
                 catch (Exception e) {
                     System.out.println("Fallo en la lectura del buffer");
