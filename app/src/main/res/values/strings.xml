@@ -2,12 +2,19 @@
     <string name="app_name">MoverioApp</string>
     <string name="Ajustes">Ajuste</string>
 
-    <string-array name="Spinner_ubicacion1">
-        <item>C</item>
-        <item>C++</item>
-        <item>Java</item>
-        <item>JavaScript</item>
-        <item>VisualBasic</item>
+    <string-array name="Spinner_ubicacion">
+        <item>No mostrar</item>
+        <item>Arriba Izquierda</item>
+        <item>Arriba Centro</item>
+        <item>Arriba Derecha</item>
+        <item>Centro Izquierda</item>
+        <item>Centro</item>
+        <item>Centro Derecha</item>
+        <item>Abajo Izquierda</item>
+        <item>Abajo Centro</item>
+        <item>Abajo Derecha</item>
+
+
     </string-array>
 
 </resources>

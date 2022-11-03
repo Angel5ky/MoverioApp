@@ -1,4 +1,4 @@
-package com.example.moverioapp;//======================================================================================================================
+package com.example.moverioapp.moka7;//======================================================================================================================
 //Clase de conexión y lectura de datos de PLC
 //======================================================================================================================
 
@@ -59,8 +59,8 @@ public class PlcConnection implements Runnable {
 
                 }
                 catch (Exception e) {
-                    System.out.println("Fallo en la lectura del buffer");
-                    System.out.println("Excepción " + e);
+                    //System.out.println("Fallo en la lectura del buffer");
+                    //System.out.println("Excepción " + e);
                     running = false;
                 }
             }
