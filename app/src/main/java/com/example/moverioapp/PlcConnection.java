@@ -1,4 +1,5 @@
-package com.example.moverioapp;//======================================================================================================================
+package com.example.moverioapp;
+//======================================================================================================================
 //Clase de conexión y lectura de datos de PLC
 //======================================================================================================================
 
@@ -20,6 +21,7 @@ public class PlcConnection implements Runnable {
     private int slot = 0;
     private boolean running = false;
     public boolean leido = false;
+    private int i=0;
 
     //Array datos extraidos del PLC
     private int [] Datos = new int [20];
@@ -57,13 +59,16 @@ public class PlcConnection implements Runnable {
                     }
                     leido = true;
 
+                    System.out.println(i++);
+
                 }
                 catch (Exception e) {
                     System.out.println("Fallo en la lectura del buffer");
-                    System.out.println("Excepción " + e);
+                    //System.out.println("Excepción " + e);
                     running = false;
                 }
             }
+            System.out.println("Thread muerto");
         }
         else{
             System.out.println("Error de conexión al PLC");

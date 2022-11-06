@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.moverioapp.moka7.S7;
-
 public class MainActivity extends AppCompatActivity {
 
     private String IpAddr = "192.168.0.253";
@@ -21,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private int slot = 0;
     PlcConnection p;
     ActualizarTexto A;
+    public static Datos[] d = new Datos[21];
+    TextView [] textos = new TextView[10];
     
 
 
@@ -33,28 +33,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        //cargaDatos();
     }
 
     @Override
     protected void onStop(){
         super.onStop();
-        p.terminate();
     }
 
-    public  void botonIniciar(View view){
+    public void botonIniciar(View view){
         final Button botonInicio = (Button) findViewById(R.id.button2);
+        final Button botonAjustes = (Button) findViewById(R.id.button);
+
         final EditText textIP = (EditText) findViewById(R.id.textIP);
         IpAddr = textIP.getText().toString();
         cargaDatos();
         textIP.setVisibility(View.GONE);
-        botonInicio.setVisibility(View.GONE);
+        botonAjustes.setVisibility(View.VISIBLE);
         while(!p.leido);
-        textoEnPantalla(); //<--
+        botonInicio.setVisibility(View.GONE);
         final TextView textoDato1 = (TextView) findViewById(R.id.Dato1);
+        for(int i = 1;i<10;i++) {
+            textos[i] = (TextView) findViewById(getResources().getIdentifier("Dato" + i, "id", this.getPackageName()));
+        }
 
-
-        A = new ActualizarTexto(textoDato1, p);
+        for(int i=1;i<=20;i++){
+            d[i]=new Datos();
+        }
+        A = new ActualizarTexto(textos, p, d);
         new Thread(A).start();
     }
 
@@ -72,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        //TODO: Refrescar pantalla continuamente con un thread
+    /*    //TODO: Refrescar pantalla continuamente con un thread
     public void textoEnPantalla() {
             final TextView textoDato1 = (TextView) findViewById(R.id.Dato1);
             int[] Datos;
@@ -80,46 +85,8 @@ public class MainActivity extends AppCompatActivity {
             for (int a : Datos) {
                 textoDato1.append(a + " ");
             }
-    }
+    }*/
+
 //======================================================================================================================
 }
-
- class ActualizarTexto implements Runnable {
-    public TextView Dato1;
-     PlcConnection p;
-
-
-     public ActualizarTexto(TextView Dato1, PlcConnection p){
-        this.Dato1 = Dato1;
-        this.p = p;
-    }
-
-    public void run() {
-         while(true) {
-             try {
-                 int[] Datos;
-                 Datos = p.getDatos();
-                // Dato1.setText(" ");
-                 String cadena="";
-                 for (int a : Datos) {
-                     cadena += a + " ";
-                     Thread.sleep(10);
-                 }
-                 Dato1.setText(cadena);
-             }
-             catch (Exception e) {
-                 System.out.println("Fallo en la lectura del buffer");
-                 System.out.println("Excepción " + e);
-             }
-         }
-
-    }
-
-}
-
-
-
-
-
-
 
