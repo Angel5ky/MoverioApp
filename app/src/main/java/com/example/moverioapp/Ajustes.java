@@ -12,8 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Ajustes extends AppCompatActivity {
-
-   // Spinner spinnerUbicacion =findViewById(R.id.Spinner_ubicacion1);
+    /*---------------------------------------------------------------------
+    Clase de menú de ajustes. En ella se selecciona donde ubicar cada dato en pantalla.
+    -----------------------------------------------------------------------*/
 
     public static boolean Boleano=false;
 
@@ -22,26 +23,24 @@ public class Ajustes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajustes);
 
+        //Spinners de selección de posición.
+        final Spinner[] spinnerDato = new Spinner[21];
 
-        final Spinner[] spinnerDato = new Spinner[20];
-
-        for(int i = 1;i<11;i++){ //TODO: Actualizar a 20 campos
+        for(int i = 1;i<=20;i++){
             spinnerDato[i] = (Spinner) findViewById(getResources().getIdentifier("spinnerDato" + i, "id", this.getPackageName()));
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                     R.array.Spinner_ubicacion, android.R.layout.simple_spinner_item);
-            // Specify the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            // Apply the adapter to the spinner
             spinnerDato[i].setAdapter(adapter);
         }
 
     }
-
+        // Al salir de la pantalla de ajustes, se transfiere a cada dato la posición seleccionada
     protected void onStop(){
         super.onStop();
-        final Spinner[] spinnerDato = new Spinner[20];
+        final Spinner[] spinnerDato = new Spinner[21];
 
-        for(int i = 1;i<=9;i++) {    //TODO: Actualizar a 20 campos de datos
+        for(int i = 1;i<=20;i++) {
             spinnerDato[i] = (Spinner) findViewById(getResources().getIdentifier("spinnerDato" + i, "id", this.getPackageName()));
             String posicion;
             posicion = spinnerDato[i].getSelectedItem().toString();
@@ -80,10 +79,5 @@ public class Ajustes extends AppCompatActivity {
         }
         Boleano = true;
     }
-
-    // ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.Spinner_ubicacion1, android.R.layout.simple_spinner_item);
-
-   // adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
-   // spinnerUbicacion.setAdapter(adapter);
 
 }

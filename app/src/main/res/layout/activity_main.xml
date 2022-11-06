@@ -9,24 +9,25 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="50dp"
         android:onClick="botonAjustes"
         android:text="Ajustes"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
+        android:layout_height="0dp"
         android:background="#000000"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button">
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/textIP"
@@ -47,113 +48,124 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteY="95dp">
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
 
-        <LinearLayout
-            android:layout_width="331dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center">
 
             <TextView
                 android:id="@+id/Dato1"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:clickable="false"
                 android:text=" "
+                android:textAlignment="textStart"
                 android:textColor="#FF0000"
                 android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/Dato4"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:clickable="false"
-                android:text=" "
-                android:textColor="#FF0000"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/Dato7"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:clickable="false"
-                android:text=" "
-                android:textColor="#FF0000"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="317dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/Dato2"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:clickable="false"
                 android:text=" "
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Dato3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:text=" "
+                android:textAlignment="textEnd"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Dato4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:text=" "
+                android:textAlignment="textStart"
                 android:textColor="#FF0000"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/Dato5"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:clickable="false"
                 android:text=" "
-                android:textColor="#FF0000"
-                android:textSize="24sp" />
-
-            <TextView
-                android:id="@+id/Dato8"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:clickable="false"
-                android:text=" "
-                android:textColor="#FF0000"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="298dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Dato3"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:clickable="false"
-                android:text=" "
+                android:textAlignment="center"
                 android:textColor="#FF0000"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/Dato6"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:clickable="false"
                 android:text=" "
+                android:textAlignment="textEnd"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Dato7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:text=" "
+                android:textAlignment="textStart"
+                android:textColor="#FF0000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Dato8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:text=" "
+                android:textAlignment="center"
                 android:textColor="#FF0000"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/Dato9"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:clickable="false"
                 android:text=" "
+                android:textAlignment="textEnd"
                 android:textColor="#FF0000"
                 android:textSize="24sp" />
+        </TableRow>
 
-        </LinearLayout>
-    </LinearLayout>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

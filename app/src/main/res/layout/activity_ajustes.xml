@@ -64,7 +64,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider"
+                android:id="@+id/divider1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -92,7 +92,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider3"
+                android:id="@+id/divider2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -119,7 +119,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider4"
+                android:id="@+id/divider3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -146,7 +146,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider5"
+                android:id="@+id/divider4"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -173,7 +173,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider6"
+                android:id="@+id/divider5"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -200,7 +200,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider7"
+                android:id="@+id/divider6"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -227,7 +227,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider8"
+                android:id="@+id/divider7"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -254,7 +254,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider9"
+                android:id="@+id/divider8"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -281,7 +281,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/divider10"
+                android:id="@+id/divider9"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
@@ -308,11 +308,292 @@
             </LinearLayout>
 
             <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 11"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
                 android:id="@+id/divider11"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 12"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 13"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 14"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 15"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 16"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 17"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 18"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 19"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoDato20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Dato 20"
+                    android:textAlignment="center"
+                    android:textColor="#001AFF" />
+
+                <Spinner
+                    android:id="@+id/spinnerDato20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
         </LinearLayout>
     </ScrollView>
 
